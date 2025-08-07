@@ -5,41 +5,51 @@
 #E67E22
 #D35400 */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-nav{
-    position: fixed;
-    background-color: #F6A6A1;
-    width: 100%;
+nav {
+  position: fixed;
+  background-color: #f6a6a1;
+  width: 100%;
 }
 
-nav ul{
-    display:flex;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items: center;
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 nav ul li {
-    padding: 20px;
+  padding: 20px;
 }
 
-#welcome-section{
-    height: 100vh;
-    width: 100%;
-    background-color:bisque;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+nav ul li a { 
+    text-decoration: none;
+    color: #FFF5E1;
 }
 
-#welcome-section img{
-    height: 40px;
-    padding: 0px 5vw 5px 5vw;
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section img {
+  height: 40px;
+  padding: 0px 5vw 5px 5vw;
+}
+
+#welcome-section img:hover {
+  height: 60px;
+  padding: 0px 5vw 5px 5vw;
 }
