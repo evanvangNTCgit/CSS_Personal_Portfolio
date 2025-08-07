@@ -11,6 +11,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+p {
+  padding: 5px;
+}
 
 nav {
   position: fixed;
@@ -30,9 +33,9 @@ nav ul li {
   padding: 20px;
 }
 
-nav ul li a { 
-    text-decoration: none;
-    color: #FFF5E1;
+nav ul li a {
+  text-decoration: none;
+  color: #fff5e1;
 }
 
 #welcome-section {
@@ -55,52 +58,97 @@ nav ul li a {
   padding: 0px 5vw 5px 5vw;
 }
 
-#Wave-Emoji{
-    z-index: -1;
-    animation-name: Wave;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    display: inline-block;
+#Wave-Emoji {
+  z-index: -1;
+  animation-name: Wave;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  display: inline-block;
 }
 
-#projects{
-    width: 100%;
-    height: 100vh;
-    background-color: #f9d5b5;
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #0077B5;
+  color: white;
+}
+
+.fa-github {
+    background: #333;
+    color: white;
+}
+
+#projects {
+  width: 100%;
+  height: 100vh;
+  background-color: #f9d5b5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#project-list ul li{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    background-color: #fff5e1;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+}
+
+#contact{
+    height: 10vh;
+    background-color: #E67E22;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    color: #FFF5E1;
 }
 
 @keyframes Wave {
-	0%,
-	100% {
-		transform: rotate(0deg);
-		transform-origin: 50% 100%;
-	}
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
+  }
 
-	10% {
-		transform: rotate(2deg);
-	}
+  10% {
+    transform: rotate(2deg);
+  }
 
-	20%,
-	40%,
-	60% {
-		transform: rotate(-10deg);
-	}
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg);
+  }
 
-	30%,
-	50%,
-	70% {
-		transform: rotate(4deg);
-	}
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg);
+  }
 
-	80% {
-		transform: rotate(-10deg);
-	}
+  80% {
+    transform: rotate(-10deg);
+  }
 
-	90% {
-		transform: rotate(2deg);
-	}
+  90% {
+    transform: rotate(2deg);
+  }
 }

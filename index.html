@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evan's CSS_HTML Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   </head>
   <body>
-    <nav>
+    <nav id="navbar">
       <ul>
         <li><a href="#welcome-section">Welcome</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -21,32 +22,53 @@
           src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png"
           alt="C Sharp Logo"
         />
-        <img 
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
-        alt="HTML5 Logo"
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
+          alt="HTML5 Logo"
         />
-        <img 
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
-        alt="CSS3 Logo"
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+          alt="CSS3 Logo"
         />
-        <img 
-        src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
-        alt="SQL Logo"
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+          alt="SQL Logo"
         />
-        <img 
-        src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-        alt="JavaScript Logo"
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+          alt="JavaScript Logo"
         />
       </section>
       <h1><code id="Wave-Emoji">👋</code> Hi my name is Evan Vang</h1>
       <h1>Welcome to My Portfolio</h1>
       <p>
-        Hello! I'm Evan, a software developer specializing in C#, HTML, and CSS. 
+        Hello! I'm Evan, a software developer specializing in C#, HTML, and CSS.
         I also have experience with SQL and JavaScript.
+      </p>
+      <p>
+        <div class="socialmedica-links">
+        <a href="https://www.facebook.com/Evan.vang.7792" class="fa fa-facebook" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/evan-vang-9659b4336/" class="fa fa-linkedin" target="_blank"></a>
+        <a href="https://github.com/evanvangNTCgit" class="fa fa-github" target="_blank"></a>
+        </div>
       </p>
     </section>
     <section id="projects">
-        <h2>Projects</h2>
+      <h2>Projects</h2>
+      <section id="project-list">
+        <ul>
+          <li>
+            <h3 class="project-tile">Project 1: Product Landing Page</h3>
+            <h5>Languages Used: HTML and CSS</h5>
+            <p>A website showcasing a GPU buisiness.</p>
+            <a href="https://github.com/evanvangNTCgit/Product_Landing_Page" id="porfolio-link" target="_blank">View Project</a>
+        </li>
+        </ul>
+      </section>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: evankvang@gmail.com</p>
     </section>
   </body>
 </html>
