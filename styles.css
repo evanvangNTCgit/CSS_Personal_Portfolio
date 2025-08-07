@@ -17,7 +17,7 @@ p {
 
 nav {
   position: fixed;
-  background-color: #f6a6a1;
+  background-color: #D35400;
   width: 100%;
   z-index: 9;
 }
@@ -64,6 +64,11 @@ nav ul li a {
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
   display: inline-block;
+}
+
+.socialmedia-links a {
+    padding: 10px;
+    font-size: 20px;
 }
 
 .fa {
@@ -150,5 +155,26 @@ nav ul li a {
 
   90% {
     transform: rotate(2deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  #welcome-section {
+    height: 100vh;
+    padding: 20px;
+  }
+
+  #project-list ul li {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .fa {
+    font-size: 24px;
+    width: 40px;
   }
 }
